@@ -1,0 +1,149 @@
+:root {
+    --clr-Nutmeg: hsl(14, 45%, 36%);
+    --clr-darkraspbrery: hsl(332, 51%, 32%);
+
+    --clr-White: hsl(0, 0%, 100%);
+    --clr-RoseWhite: hsl(330, 100%, 98%);
+    --clr-Eggshell: hsl(30, 54%, 90%);
+    --clr-LightGrey: hsl(30, 18%, 87%);
+    --clr-WengeBrown: hsl(30, 10%, 34%);
+    --clr-DarkCharcoal: hsl(24, 5%, 18%);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--clr-WengeBrown);
+  
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  h1{
+    font-size: 35px;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+    color: black;
+  }
+  .card{
+    display: grid;
+  }
+
+  .content{
+    display: grid;
+    gap: 1rem;
+    padding: 2rem;
+
+  }
+  .preparation{
+    display: grid;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: var(--clr-RoseWhite);
+    line-height: 2rem;
+  }
+
+span {
+    font-weight: bold;
+}
+
+h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--clr-Nutmeg)
+}
+
+h3 {
+    color: var(--clr-darkraspbrery);
+}
+
+li::marker, td {
+    color: var(--clr-Nutmeg);
+    font-weight: bold;
+}
+
+li::marker{
+    /* padding-right: 30px; */
+}
+
+ol {
+    list-style-position: outside;
+    /* padding-inline-start: 10px; */
+}
+
+.preparation li::marker {
+    color: var(--clr-darkraspbrery);
+    padding: 0;
+}
+
+table {
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    font-weight: normal;
+    padding-left: 2rem;
+}
+
+td {
+    margin-top: 2rem;
+    padding-left: 2rem;
+}
+
+tr {
+    border-bottom: 1px solid var(--clr-LightGrey);
+    margin-bottom: 2rem;
+}
+
+.nutrition {
+    display: grid;
+    gap: 1rem;
+    /* padding-left: 1rem; */
+}
